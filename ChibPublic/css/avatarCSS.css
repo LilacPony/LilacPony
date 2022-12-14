@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*elements*/
+header{
+	padding: 10vh 0vh;
+	background-color: #F8D59B;
+}
+
+p{
+	text-align: justify;
+	font-family: 'Nunito', sans-serif;
+	color: #150D03;
+}
+
+h1, h2, h3, h4, h5{
+	font-family: 'Indie Flower', cursive;
+	color: #150D03;
+}
+
+footer{
+	padding-top: 5vh;
+	padding-bottom: 2.5vh;
+	background-color: #F8D59B;
+}
+
+img{
+	position: relative;
+}
+
+/*nav my beloved*/
+a{
+	color: #5EBD4E;
+}
+
+a:hover{
+	transition-duration: 0.2s;
+	color: #31A143;
+	text-decoration: none;
+}
+
+a:visited{
+	color: #31A143;
+}
+
+/*ids*/
+#builder{
+    position: relative;
+    height: 600px;
+}
+
+#lineart{
+	position: absolute;
+}
+
+#base, #eyes, #ears, #talon, #mark1, #mark2, #acc1, #acc2, #acc3, #acc4{
+	position: absolute;
+}
+/*classes babey*/
+
+.builderBG{
+	background-color: #FAFAFA;
+	max-width: 100vw;
+}
+
+.pDecor{
+	background-color: hsla(30,31%,94%,0.80);
+	padding: 5vh;
+}
+
+.hDecor{
+	font-family: 'Indie Flower', cursive;
+}
+	
+/*I'm just a sucker for this effect now that I know how to use it, background gradient my beloved*/
+.bodyBG{
+	background: linear-gradient(transparent, 20%, #51BADA),
+    url("../images/header.png");
+	background-size: cover;
+	background-position: center;
+	max-width: 100vw;
+}
+
+/*darn you formatting issues!*/
+@media only screen and (max-width: 575.5px){
+	#reflect{
+		padding-top: 5vh;
+	}
+	
+	#named{
+		padding-top: 3vh;
+	}
+	
+	.builderBG{
+		min-width: 100vw;
+		padding-bottom: 500px;
+	}
+}
+
+@media only screen and (max-width: 1250px) and (min-width: 575.5px){
+	.builderBG{
+		padding-right: 300px;
+	}
+}

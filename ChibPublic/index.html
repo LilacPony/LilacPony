@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Colour a Chiboma!</title>
+</head>
+	<!--fontawesome-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!--google fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&display=swap" rel="stylesheet">
+	
+	<!--Bootstrap 4-->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<!--CSS-->
+		<link href="css/avatarCSS.css" rel="stylesheet" type="text/css">
+	
+	<!--Disclaimer-->
+	<!--All images featured on this site are of my own creating, most of it is sourced from the Mythos project itself! You can find a link in the first paragraph, you should check it out. Maybe one of these days I'll get the update for the Fakemon out...-->
+	
+<body>
+	<header>
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-sm-12 hDecor">
+					<h1 class="pb-1"><b>What's a Chiboma?</b></h1>
+					<h2>A guide to the Not-Mon, and a free colouring page!</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+<div class="bodyBG py-5">
+	<section class="pDecor">
+		<div class="container my-4">
+			<div class="row">
+				<div class="col-sm-6">
+					<h4><b>No, really, what is it?</b></h4>
+					<p>Chiboma is the Chimera Not-Mon, totally <b>not</b> a knockoff Pokémon for the fangame <a href="https://pokepigment.weebly.com/" target="_blank">Pokémon Pigment</a> (and soon-to-be Pokémon Verse)! It was once said to be a regular Not-Mon before a crystal fell from the sky and into its possession. This crystal, which soon became its token orb, granted it immense power and slowly transformed it into the legendary Not-Mon known for saving the Mythos Area-of-Residence from destruction many centuries ago… But now? Now it’s a cute little PNG for you to colour and make your own for free!</p>
+				</div>
+				<div class="col-sm-6">
+					<h4><b>How do I use this site?</b></h4>
+					<p>Several options for customization have been laid out below, each neatly organized into its own category. Click on one of the colour circles to apply that colour and associated marking/design to the base on the right and keep going until you’re satisfied! Each option is based off one of its official designs, from regular-ol’ Chiboma to its ethereal forms, and even its shiny! Want to get rid of an option or clear your slate without refreshing the page? Click on the red X button to clear your selection; works best with add-ons like the gem or orb! You can even name your creation using the input form below the add-ons. Nifty, eh?</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="builderBG">
+		<div class="container">
+			<div class="row my-5 p-3">
+				<div class="col-sm-4 pr-3 pb-4">
+					<h3><b>Colours</b></h3>
+					<h5 class="pt-3">Base Coat</h5>
+						<img onClick="setBase('base1.png');" src="images/tb1.png" alt="baseSelection">
+						<img onClick="setBase('base2.png');" src="images/tb2.png" alt="baseSelection">
+						<img onClick="setBase('base3.png');" src="images/tb3.png" alt="baseSelection">
+						<img onClick="setBase('base4.png');" src="images/tb4.png" alt="baseSelection">
+						<img onClick="setBase('clear.png');" src="images/tc.png" alt="clearSelection">
+					<br>
+					
+					<h5 class="pt-3">Eyes</h5>
+						<img onClick="setEyes('eyes1.png');" src="images/tey1.png" alt="eyeSelection">
+						<img onClick="setEyes('eyes2.png');" src="images/tey2.png" alt="eyeSelection">
+						<img onClick="setEyes('eyes3.png');" src="images/tey3.png" alt="eyeSelection">
+						<img onClick="setEyes('clear.png');" src="images/tc.png" alt="clearSelection">
+					<br>
+					
+					<h5 class="pt-3">Ears</h5>
+						<img onClick="setEars('ears1.png');" src="images/te1.png" alt="earSelection">
+						<img onClick="setEars('ears2.png');" src="images/te2.png" alt="earSelection">
+						<img onClick="setEars('ears3.png');" src="images/te3.png" alt="earSelection">
+						<img onClick="setEars('ears4.png');" src="images/te4.png" alt="earSelection">
+						<img onClick="setEars('clear.png');" src="images/tc.png" alt="clearSelection">
+					<br>
+					
+					<h5 class="pt-3">Talons</h5>
+						<img onClick="setTalon('talon1.png');" src="images/tt1.png" alt="talonSelection">
+						<img onClick="setTalon('talon2.png');" src="images/tt2.png" alt="talonSelection">
+						<img onClick="setTalon('clear.png');" src="images/tc.png" alt="clearSelection">
+					<br>
+					
+					<!-- markings -->
+					<h5 class="pt-3">Marking 1</h5>
+						<img onClick="setMark1('mark1-1.png');" src="images/tm1-1.png" alt="mark1Selection">
+						<img onClick="setMark1('mark1-2.png');" src="images/tm1-2.png" alt="mark1Selection">
+						<img onClick="setMark1('mark1-3.png');" src="images/tm1-3.png" alt="mark1Selection">
+						<img onClick="setMark1('mark1-4.png');" src="images/tm1-4.png" alt="mark1Selection">
+						<img onClick="setMark1('clear.png');" src="images/tc.png" alt="clearSelection">
+					<br>
+					
+					<h5 class="pt-3">Marking 2</h5>
+						<img onClick="setMark2('mark2-1.png');" src="images/tm2-1.png" alt="mark2Selection">
+						<img onClick="setMark2('mark2-2.png');" src="images/tm2-2.png" alt="mark2Selection">
+						<img onClick="setMark2('clear.png');" src="images/tc.png" alt="clearSelection">
+					<br>
+					
+				</div>
+				
+				<div class="col-sm-3 pr-5">
+				<h3><b>Add-ons</b></h3>
+					<h5 class="pt-3">Gem</h5>
+						<img onClick="setAcc1('gem1.png');" src="images/tg1.png" alt="acc1Selection">
+						<img onClick="setAcc1('gem2.png');" src="images/tg2.png" alt="acc1Selection">
+						<img onClick="setAcc1('clear.png');" src="images/tc.png" alt="clearSelection">
+					<br>
+					
+					<h5 class="pt-3">Tail</h5>
+						<img onClick="setAcc2('tail1.png');" src="images/ta1.png" alt="acc1Selection">
+						<img onClick="setAcc2('tail2.png');" src="images/ta2.png" alt="acc1Selection">
+						<img onClick="setAcc2('clear.png');" src="images/tc.png" alt="clearSelection">
+					<br>
+					
+					<h5 class="pt-3">Ear Tuft</h5>
+						<img onClick="setAcc3('tuft1.png');" src="images/ta1.png" alt="acc1Selection">
+						<img onClick="setAcc3('tuft2.png');" src="images/ta2.png" alt="acc1Selection">
+						<img onClick="setAcc3('clear.png');" src="images/tc.png" alt="clearSelection">
+					<br>
+					
+					<h5 class="pt-3">Orb</h5>
+						<img onClick="setAcc4('orb1.png');" src="images/to1.png" alt="acc1Selection">
+						<img onClick="setAcc4('orb2.png');" src="images/to2.png" alt="acc1Selection">
+						<img onClick="setAcc4('orb3.png');" src="images/to3.png" alt="acc1Selection">
+						<img onClick="setAcc4('clear.png');" src="images/tc.png" alt="clearSelection">
+					<br>
+					
+					<!--name-->
+					<form action="javascript:setName();" class="pt-3">
+						<div class="form-group">
+							<label for="name"><h3>Name your Chiboma?</h3></label>
+							<input id="name" class="form-control" type="text">
+						</div>
+							
+						<button class="btn btn-block btn-outline-dark text-center" type="submit">Name Me!</button>
+					</form>
+				</div>
+				
+				<!--result-->
+				<div class="col-sm-5">
+					<h3 id="named" class="hDecor"><b>Result</b></h3>
+					<div id="colouringBook">
+						<div id="base"></div>
+						<div id="eyes"></div>
+						<div id="ears"></div>
+						<div id="talon"></div>
+						<div id="mark1"></div>
+						<div id="mark2"></div>
+						<img src="images/lines.png" alt="Chiboma" id="lineart">
+						<div id="acc1"></div>
+						<div id="acc2"></div>
+						<div id="acc3"></div>
+						<div id="acc4"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+	<footer>
+		<p class="text-center">I bet you were expecting a footer, but it was I, Dio!</p>
+	</footer>
+	
+	<script src="js/avatarJS.js"></script>
+</body>
+</html>
